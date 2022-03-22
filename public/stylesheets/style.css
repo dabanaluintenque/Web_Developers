@@ -1,0 +1,116 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1{
+
+  text-align: center;
+  color: blue;
+  
+}
+
+
+/* add padding to the container */
+.container{
+
+  padding: 10px;
+}
+
+/* style for fields*/
+input[type=text], input[type=password]{
+
+  width: 50%;
+  padding: 5px;
+  margin: 0px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* style for all the buttons */
+
+button{
+
+  background-color: dodgerblue;
+  color: #f1f1f1;
+  padding: 7px 20px;
+  margin: 7px 0;
+  border: none;
+  width: 100%;
+  opacity: 0.7;
+
+}
+
+
+/* Style for cancel Button */
+
+.cancelButton{
+  padding: 14px 20px;
+  background-color: #f43c36;
+}
+
+/* style for sign up button */
+
+.signupButton{
+
+padding: 14px 20px;
+
+}
+
+/* give cancel and submit button same with */
+.cancelButton, .signupButton{
+
+float: left;
+width: 30%;
+
+}
+
+/* display for the modal class */
+
+.modal{
+
+  display: none;
+  position: fixed;
+  z-index: 1; /* be on top */
+  left: 0;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* use scroll if necessary */
+  background-color: #577e7e;
+
+  padding-top: 40px ;
+
+}
+
+/* class modal content */
+
+.modal-content{
+
+  background: #fefefe;
+  margin: 5% auto 15% auto; /* it mean top is 5% and bottom and centered 15% */
+  border: 1px solid #888;
+  width: 70%;      /* the size of the formula */
+}
+
+
+/*
+
+label[for=friends]{
+
+  position:absolute;
+
+  color: blue;
+
+  top: 20%;
+  right: 30%;
+ 
+} */
+
+
+

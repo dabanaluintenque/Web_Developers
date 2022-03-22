@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Birthday Info and time management</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+
+
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+
+    <h1>Birthday Info and time-management!</h1>
+
+    <div class="row">
+      <div class="col">
+        <Section>
+          We build this website to tell you about your <strong>time since your day of birth</strong><br>
+          and <strong>how you spend it.</strong> AKA time-management.
+        </Section><br>
+      </div>
+    </div>
+
+    <!--
+       Note:
+          class="modal", class=container class="modal-content"  are  a bootstrap class 
+     -->
+    <button onclick="displayFormula()" class="signupButton">Sign up</button>
+    <div id="id0077" class="modal">
+      <form class="modal-content">
+        <div class="container">
+          <p> Please fill up to form for your acount:</p>
+          <label for="firstName:">First Name:</label>
+          <input type="text" id="firstName" placeholder="Jung" required><br><br>
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" placeholder="comp335" required><br><br>
+          <label for="dob">Day Of Birth:</label>
+          <input type="date" id="dob" required><br><br>
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="himanop" required><br><br>
+          <label for="pwd">Password:</label>
+          <input type="password" id="pwd" placeholder="123xyz"><br> <br>
+          <label for="re-enterpwd"> Re-enter Pass:</label>
+          <input type="password" id="re-enterpwd" placeholder="123xyz" required><br><br>
+
+          <p id="info"></p>
+          <div>
+            <button type="button" onclick="cancelButton()" class="cancelButton">Cancel</button>
+            <button type="button" onclick="checkSignUp()" class="signupButton">sign Up</button>
+
+          </div>
+        </div>
+      </form>
+
+    </div>
+    <!-- <form>
+          <label for="login"> Login:</label>
+         <label for="friends">Friends</label>
+          <input type="button" onclick="" value="Sign_Up">
+          <input type="search" id="friends" placeholder="search for Friends"><br><br>
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="himanop"><br><br>
+          <label for="pwd"> Password:</label>
+          <input type="password" id="pwd" placeholder="123xyz"><br><br>
+          <input type="button" onclick="" value="Enter">
+
+          <input type="reset">
+
+
+
+    </form>-->
+
+
+
+  </div>
+
+  <script src="./javascripts/functions.js"></script>
+</body>
+
+</html>
