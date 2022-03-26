@@ -1,0 +1,147 @@
+body {
+  padding: 50px;
+  font: 14px Trebuchet MS;
+  background-color: #eae7dc;
+}
+
+a {
+  color: #e85a4f;
+}
+
+u{
+  color: #8e8d8a;
+}
+
+strong {
+  color: #e85a4f;
+}
+
+h1{
+  text-align: center;
+  color: #e85a4f;
+  font-family: Trebuchet MS;
+}
+
+section{
+  text-align: center;
+  font-family: Trebuchet MS;
+}
+
+
+/* add padding to the container */
+.container{
+  padding: 10px;
+}
+
+/* style for fields*/
+input[type=text], input[type=password]{
+
+  width: 50%;
+  padding: 5px;
+  margin: 0px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* style for all the buttons */
+
+button{
+
+  background-color: #e85a4f;
+  color: #f1f1f1;
+  padding: 7px 20px;
+  margin: 7px 0;
+  border: none;
+  width: 100%;
+  opacity: 0.7;
+
+}
+
+
+/* Style for cancel Button */
+
+.cancelButton{
+  padding: 14px 20px;
+  background-color: #e85a4f;
+}
+
+/* style for sign up button */
+
+.signupButton{
+margin-left: 65%;
+padding: 14px 20px;
+}
+
+#searchId {
+  margin-left: 65%;
+  
+}
+
+#login {
+  padding: 14px 20px;
+  background-color: #e85a4f;
+  color:#f1f1f1;
+  opacity: 0.7;
+  border: none;
+}
+
+#reset {
+  padding: 14px 20px;
+  background-color: #e85a4f;
+  color:#f1f1f1;
+  opacity: 0.7;
+  border: none;
+}
+
+/* give cancel and submit button same with */
+.cancelButton, .signupButton{
+padding: 14px 20px;
+float: left;
+width: 30%;
+}
+
+/* display for the modal class */
+
+.modal{
+
+  display: none;
+  position: fixed;
+  z-index: 1; /* be on top */
+  left: 0;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* use scroll if necessary */
+  background-color: #d8c3a5;
+
+  padding-top: 40px ;
+
+}
+
+/* class modal content */
+
+.modal-content{
+
+  background: #fefefe;
+  margin: 5% auto 15% auto; /* it mean top is 5% and bottom and centered 15% */
+  border: 1px solid #888;
+  width: 70%;      /* the size of the formula */
+}
+
+
+/*
+
+label[for=friends]{
+
+  position:absolute;
+
+  color: blue;
+
+  top: 20%;
+  right: 30%;
+ 
+} */
+
+
+
