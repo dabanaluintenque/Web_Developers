@@ -16,20 +16,37 @@
   <div class="container-fluid">
 
 
-    <u><h1>Birthday Info and time-management!</h1></u>
+    <h1>Birthday Info and time-management!</h1>
 
     <div class="row">
       <div class="col">
-        <section>
+        <Section>
           We build this website to tell you about your <strong>time since your day of birth</strong><br>
           and <strong>how you spend it.</strong> AKA time-management.
-        </section><br>
+        </Section><br>
       </div>
     </div>
 
+
+
+    <!--Form for login-->
+    <form>
+      <lable for="searchId"> search</lable>
+      <input type="search" id="searchId" placeholder="find your friend" saze="30"><br> <br>
+      <label for="username">username:</label>
+      <input type="text" id="username" placeholder="himnop"><br> <br>
+      <label for="paswordId"> password:</label>
+      <input type="text" id="passwordId" placeholder="123xzy" pattern="[0-9]{3}[A-Za-z]{4}" required><br><br>
+
+      <input type="button" onclick="" value="Forget my password"><br> <br>
+
+      <input type="submit" value="login">
+      <input type="reset">
+
+    </form>
     <!--
        Note:
-          class="modal", class=container class="modal-content" are a bootstrap class 
+          class="modal", class=container class="modal-content"  are  a bootstrap class 
      -->
     <button onclick="displayFormula()" class="signupButton">Sign up</button>
     <div id="id0077" class="modal">
@@ -52,7 +69,7 @@
           <p id="info"></p>
           <div>
             <button type="button" onclick="cancelButton()" class="cancelButton">Cancel</button>
-            <button type="button" onclick="checkSignUp()" class="signupButton">Sign Up</button>
+            <button type="button" onclick="checkSignUp()" class="signupButton">sign Up</button>
 
           </div>
         </div>
@@ -75,6 +92,9 @@
 
 
     </form>-->
+
+
+
 
   </div>
 
