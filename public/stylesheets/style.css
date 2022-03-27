@@ -30,7 +30,6 @@ section{
 
 /* add padding to the container */
 .container{
-
   padding: 10px;
 }
 
@@ -58,29 +57,59 @@ button{
   opacity: 0.7;
 
 }
+.yesBn{
+
+  background-color: #e85a4f;
+  color: #f1f1f1;
+  padding: 7px 20px;
+  margin: 2px 0;
+  border: none;
+  width: 10%;
+  opacity: 0.7;
+}
+
 
 
 /* Style for cancel Button */
 
 .cancelButton{
   padding: 14px 20px;
-  background-color: #f43c36;
+  background-color: #e85a4f;
 }
 
 /* style for sign up button */
 
 .signupButton{
 margin-left: 65%;
-padding: 13px 20px;
+padding: 14px 20px;
+}
 
+#searchId {
+  margin-left: 65%;
+  
+}
+
+#login {
+  padding: 14px 20px;
+  background-color: #e85a4f;
+  color:#f1f1f1;
+  opacity: 0.7;
+  border: none;
+}
+
+#reset {
+  padding: 14px 20px;
+  background-color: #e85a4f;
+  color:#f1f1f1;
+  opacity: 0.7;
+  border: none;
 }
 
 /* give cancel and submit button same with */
 .cancelButton, .signupButton{
-
+padding: 14px 20px;
 float: left;
 width: 30%;
-
 }
 
 /* display for the modal class */
