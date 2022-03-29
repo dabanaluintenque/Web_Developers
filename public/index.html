@@ -13,7 +13,9 @@
 
   <div class="container-fluid">
 
-    <u><h1>Birthday Info and Time-management!</h1></u>
+    <u>
+      <h1>Birthday Info and Time-management!</h1>
+    </u>
 
     <div class="row">
       <div class="col">
@@ -23,27 +25,56 @@
         </section><br>
       </div>
     </div>
+
+
+    <!--Login page-->
     <form>
       <label for="searchId" id="searchId"> Search:</label>
       <input type="search" id="searchId" placeholder="find your friend" size="30"><br> <br>
-      <label for="username">Username:</label>
-      <input type="text" id="username" placeholder="himanop"><br> <br>
+      <label for="usernamelogin">Username:</label>
+      <input type="text" id="usernamelogin" placeholder="himanop"><br> <br>
       <label for="paswordId"> Password:</label>
       <input type="text" id="passwordId" placeholder="123xzy" pattern="[0-9]{3}[A-Za-z]{4}" required><br><br>
 
-      <input type="button" onclick="" value="Forgot my password"><br> <br>
 
-      <input type="submit" value="Login" id="login">
+      <input type="button" onclick="document.getElementById('005').style.display='block' " value="forget my password">
+      <br><br>
+
+      <input type="button" onclick="loginFunk()" value="Login" id="login">
       <input type="reset" id="reset">
 
     </form>
+
+    <!--Will open new window  when forget buttun is clicked-->
+    <div id="005" class="modal">
+      <div class="modal-body">
+        <form>
+          <label>Enter your username:</label>
+          <input type="text" id="yourUserName" name="username"><br> <br>
+
+          <label>create new password:</label>
+          <input type="password" id="creatynewpassword" name="createnewpass"><br> <br>
+
+          <label>Re-enter your password:</label>
+          <input type="password" id="renterNewpassword" name="newpassword"><br><br>
+
+
+          <input type="button" onclick="" value="Submit">
+          <input type="reset">
+          <input type="button" onclick="document.getElementById('005').style.display='none'" value="cancel">
+
+        </form>
+
+      </div>
+
+    </div>
     <!--
        Note:
-          class="modal", class=container class="modal-content" are a bootstrap class 
+          class="modal", class=container class="modal-content" are css class 
      -->
     <button onclick="displayFormula()" class="signupButton">Sign up</button>
     <div id="id0077" class="modal">
-      <form class="modal-content">
+      <form class="modal-content" id="form">
         <div class="container">
           <p> Please fill up to form for your acount:</p>
           <label for="firstName:">First Name:</label>
@@ -53,7 +84,7 @@
           <label for="dob">Day Of Birth:</label>
           <input type="date" id="dob" required><br><br>
           <label for="username">Username:</label>
-          <input type="text" id="username" placeholder="himanop" required><br><br>
+          <input type="text" id="userName" placeholder="himanop" required><br><br>
           <label for="pwd">Password:</label>
           <input type="password" id="pwd" placeholder="123xyz"><br> <br>
           <label for="re-enterpwd"> Re-enter Pass:</label>
@@ -62,32 +93,120 @@
           <p id="info"></p>
           <div>
             <button type="button" onclick="cancelButton()" class="cancelButton">Cancel</button>
+
+
             <button type="button" onclick="checkSignUp()" class="signupButton1">Sign Up</button>
+
+            <input type="reset">
+
+            <!-- <input type="submit" value="Submit" id='submit' class="signupButton1"> -->
           </div>
         </div>
       </form>
 
     </div>
-    <!-- <form>
-          <label for="login"> Login:</label>
-         <label for="friends">Friends</label>
-          <input type="button" onclick="" value="Sign_Up">
-          <input type="search" id="friends" placeholder="search for Friends"><br><br>
-          <label for="username">Username:</label>
-          <input type="text" id="username" placeholder="himanop"><br><br>
-          <label for="pwd"> Password:</label>
-          <input type="password" id="pwd" placeholder="123xyz"><br><br>
-          <input type="button" onclick="" value="Enter">
 
-          <input type="reset">
+    <!--Profile starts here-->
+
+    <div id="003" class="modal">
+      <div class="container">
+
+        <div class="row">
+          <div class="col">
+
+            <button onclick="document.getElementById('001').style.display ='block' ">Profile</button>
+
+            <!---Will open a new window after profile button is clicked-->
+            <div id='001' class="modal">
+              <form class="modal-body">
+
+                <label for="userFullname"> Full Name:</label>
+
+                <input type="text" id="userFullname" name="user" value=""> <br> <br>
+                <!-- passed the signup value here-->
+
+                <label for="dayOfBirth"> Day Of Birth:</label>
+
+                <input type="dayOfBirth" id="dob" name="birthday" value=""> <!-- Do the same here-->
+                <br><br>
+
+                <label for="password"> Password:</label>
+
+                <input type="text" id="password" name="pwd" value=""><br> <br>
+                <!-- pass the user password here after sign up -->
+                <input type="button" onclick="document.getElementById('002').style.display='block' " value="Update">
+
+                <input type="reset">
+
+                <input type="button" onclick="document.getElementById('001').style.display='none'" value="cancel">
+              </form>
+            </div>
 
 
+            <!-- Will open new window after the update button is clicked-->
+            <div id="002" class="modal">
+              <!-- the values in this will be active after user signup-->
+              <form class="modal-body">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="fname" value=""><br> <br>
+                <label for="lastname"> Last Name:</label>
+                <input type="text" id="lastname" name="lname" value=""><br> <br>
+                <label for="dayOfBirth">Day Of Birth:</label>
+                <input type="text" id="dayOfBirth" name="dob" value=""><br> <br>
+                <label for="username"> Username:</label>
+                <input type="text" id="username" name="user"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="pwd" value=""><br><br>
+                <label for="newpassword">New Password:</label>
+                <input type="password" id="newpassword" name="newpwd" value=""><br><br>
+                <label for="re-enter-pass">Re-enter new Password:</label>
+                <input type="password" id="reEnterPass" name="re-enterpwd" value=""><br><br>
 
-    </form>-->
+                <input type="button" onclick="" value="Update">
+                <input type="reset">
+                <input type="button" onclick="document.getElementById('002').style.display='none'" value="cancel">
+              </form>
 
-  </div>
+            </div>
 
-  <script src="./javascripts/functions.js"></script>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <p id="displayInfo"> All info about birthday.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <p>would you like to see if you spend your time wisely?</p>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col"></div>
+
+          <button onclick="" class="yesBn">yes</button>
+
+          <div class="col">
+            <button onclick="document.getElementById('003').style.display='none'" class="yesBn">no</button>
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <!--Go Back to the mean page: -->
+      <input type="button" onclick="document.getElementById('003').style.display='none' " value="cancel"
+        class="cancelButton">
+    </div>
+
+    <script src="./javascripts/functions.js"></script>
 </body>
 
 </html>
